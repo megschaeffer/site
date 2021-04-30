@@ -419,22 +419,23 @@
                 
                   <h1>MkDocs Walkthrough</h1>
                 
-                <p>This page is just a brief explanation of how to generate a live preview and build HTML files when working with Markdown and Mkdocs on a Mac computer.</p>
+                <p>This page documents how to create a new MkDocs project folder, generate a live preview of the site, and build HTML files when working with Markdown and Mkdocs on a Mac computer.</p>
 <h2 id="to-generate-a-live-preview">To Generate a Live Preview</h2>
 <ol>
 <li>
-<p>Ceate a new folder on your desktop in which you will put the files for your new project. To do so, run the following command on Terminal:</p>
-<p><code>mkdocs new project-folder</code></p>
+<p>Ceate a new folder on your desktop in which you will put the files for your new project. To do so, run the following commands on the Terminal command line:</p>
+<p><code>cd desktop</code></p>
+<p><code>mkdocs new my-mkdocs</code></p>
 </li>
 <li>
 <p>On Terminal, navigate to your project folder by running the following command:</p>
-<p><code>cd desktop/project-folder</code></p>
+<p><code>cd desktop/my-mkdocs</code></p>
 <p>Your project folder should have both a mkdocs.yml file and a docs folder.</p>
 </li>
 <li>
-<p>Before running the next command, you need to be sure you are situated in the "root" of your project folder which is wherever the .yml file is located. To do so, run the following command:</p>
+<p>Now that you are situated in the "root" of the folder, you can now generate the live preview of your site by running the following command:</p>
 <p><code>mkdocs serve</code></p>
-<p>This should process and build the necessary documentation and should look something like this on Terminal:</p>
+<p>This will process and build the necessary documentation and should look something like this on Terminal:</p>
 <p><img src="/mkdocs-serve.png" alt "Screenshot of Terminal command mkdocs serve" width= 80% /></p>
 </li>
 <li>
@@ -456,7 +457,7 @@
 <h2 id="to-build-your-site-create-html-files">To Build Your Site (Create HTML Files):</h2>
 <ol>
 <li>
-<p>Run the following command in Terminal:</p>
+<p>Navigate to your project folder again (See step 2 under <em>To Generate a Live Preview</em>) and run the following command in Terminal:</p>
 <p><code>mkdocs build</code></p>
 </li>
 <li>
